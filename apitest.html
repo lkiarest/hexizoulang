@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="Public/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var urlMap = {
+                "btnCatagoryAll":"http://localhost/myshop/Catagory/clist",
+                "btnCatagory":"http://localhost/myshop/Catagory/clist/id/2",
+                "btnProductsAll":"http://localhost/myshop/Product/clist",
+                "btnCatagoryProducts":"http://localhost/myshop/Product/clist/catagoryid/10",
+                "btnOneProducts":"http://localhost/myshop/Product/item/id/1",
+                "btnBasket":"http://localhost/myshop/Basket/clist/customid/1",
+                "Order":"http://localhost/myshop/Order/clist/customid/1"
+            };
+            $(".leftside > button").click(function() {
+                var btnId = $(this).attr("id");
+                var requestUrl = urlMap[btnId];
+
+                $.ajax({
+                    url:requestUrl,
+                    method:"GET",
+                    //dataType:"json",
+                    success: function(data) {
+                        $("#result").html(JSON.stringify(data));
+                    },
+                    error:function(xhr, status) {
+                        $("#result").html(status);
+                    }
+                });
+            });
+        });
+    </script>
+    <style type="text/css">
+        .leftside {
+            width: 100%;
+            height:10%;
+            border-right: 1px solid gray;
+        }
+        #result {
+            margin-top: 20px;
+            width: 100%;
+            height: 90%;;
+        }
+    </style>
+</head>
+<body>
+<header>Test API</header>
+<hr>
+<div class="leftside">
+    <button id="btnCatagoryAll">All Catagory</button>
+    <button id="btnCatagory">One Catagory</button>
+    <button id="btnProductsAll">All Products</button>
+    <button id="btnCatagoryProducts">Catagory Product</button>
+    <button id="btnOneProducts">One Product</button>
+    <button id="btnBasket">Basket</button>
+    <button id="Order">Order</button>
+</div>
+<div id="result">
+</div>
+</body>
+</html>
