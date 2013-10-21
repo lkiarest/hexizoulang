@@ -67,8 +67,14 @@
 
 .page .header .search .btnSearch {
     display: inline-block;
-    height: 30px;
-    float:right;
+    position:absolute;
+    right:20px;
+    height: 14px;
+    width: 14px;
+    margin-top:8px;
+    background-image: url("../img/glyphicons-halflings.png");
+    background-position: -48px 0px;
+    cursor:pointer;
 }
 
 .page .mainnav {

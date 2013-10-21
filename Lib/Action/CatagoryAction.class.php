@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class CatagoryAction extends Action {
+class CatagoryAction extends UtilAction {
     public function clist($id=-1) {
         if ($id == -1) {
             $result = M()->query("select * from categories c, categories_description cd where cd.categories_id=c.categories_id");

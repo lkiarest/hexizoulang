@@ -5,21 +5,27 @@
     <script type="text/javascript">
         $(function() {
             var urlMap = {
-                "btnCatagoryAll":"http://localhost/myshop/Catagory/clist",
-                "btnCatagory":"http://localhost/myshop/Catagory/clist/id/2",
-                "btnProductsAll":"http://localhost/myshop/Product/clist",
-                "btnCatagoryProducts":"http://localhost/myshop/Product/clist/catagoryid/10",
-                "btnOneProducts":"http://localhost/myshop/Product/item/id/1",
-                "btnBasket":"http://localhost/myshop/Basket/clist/customid/1",
-                "Order":"http://localhost/myshop/Order/clist/customid/1"
+                "btnLogin":{"url":"http://localhost/myshop/User/login","method":"POST", "args":{"name":"qtx","pwd":"123456"}},
+                "btnLogoff":{"url":"http://localhost/myshop/User/logoff","method":"POST"},
+                "btnCatagoryAll":{"url":"http://localhost/myshop/Catagory/clist","method":"POST"},
+                "btnCatagory":{"url":"http://localhost/myshop/Catagory/clist/id/2"},
+                "btnProductsAll":{"url":"http://localhost/myshop/Product/clist"},
+                "btnCatagoryProducts":{"url":"http://localhost/myshop/Product/clist/catagoryid/10"},
+                "btnOneProducts":{"url":"http://localhost/myshop/Product/item/id/1"},
+                "btnBasket":{"url":"http://localhost/myshop/Basket/clist/customid/1"},
+                "btnOrder":{"url":"http://localhost/myshop/Order/clist/customid/1"}
             };
             $(".leftside > button").click(function() {
                 var btnId = $(this).attr("id");
-                var requestUrl = urlMap[btnId];
+                var requestParams = urlMap[btnId];
+                var requestUrl = requestParams["url"];
+                var requestMethod = requestParams["method"] ? requestParams["method"] : "GET";
+                var requestArgs = requestParams["args"] ? requestParams["args"] : null;
 
                 $.ajax({
                     url:requestUrl,
-                    method:"GET",
+                    method:requestMethod,
+                    data:requestArgs,
                     //dataType:"json",
                     success: function(data) {
                         $("#result").html(JSON.stringify(data));
@@ -48,13 +54,15 @@
 <header>Test API</header>
 <hr>
 <div class="leftside">
+    <button id="btnLogin">Login</button>
+    <button id="btnLogoff">Logoff</button>
     <button id="btnCatagoryAll">All Catagory</button>
     <button id="btnCatagory">One Catagory</button>
     <button id="btnProductsAll">All Products</button>
     <button id="btnCatagoryProducts">Catagory Product</button>
     <button id="btnOneProducts">One Product</button>
     <button id="btnBasket">Basket</button>
-    <button id="Order">Order</button>
+    <button id="btnOrder">Order</button>
 </div>
 <div id="result">
 </div>

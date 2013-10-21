@@ -1,0 +1,1444 @@
+[ 2013-10-20T13:03:05+08:00 ] 127.0.0.1 /myshop/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003948s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.059448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059571s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003115s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.027636s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002569s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.036812s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003270s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003373s ]
+
+[ 2013-10-20T13:03:10+08:00 ] 127.0.0.1 /myshop/Catagory/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.024024s ]
+INFO: [ route_check ] --END-- [ RunTime:0.024155s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id [ RunTime:0.002116s ]
+
+[ 2013-10-20T13:03:11+08:00 ] 127.0.0.1 /myshop/Catagory/clist/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001241s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id and c.categories_id=2 [ RunTime:0.001229s ]
+
+[ 2013-10-20T13:03:11+08:00 ] 127.0.0.1 /myshop/Product/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001245s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id [ RunTime:0.002584s ]
+
+[ 2013-10-20T13:03:12+08:00 ] 127.0.0.1 /myshop/Product/clist/catagoryid/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005271s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005742s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005352s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id and cd.categories_id=10 [ RunTime:0.001618s ]
+
+[ 2013-10-20T13:03:12+08:00 ] 127.0.0.1 /myshop/Product/item/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001241s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+SQL: select * from products c, products_to_categories cd,products_description pd where cd.products_id=c.products_id and c.products_id=pd.products_id and c.products_id=1 [ RunTime:0.000872s ]
+
+[ 2013-10-20T13:03:13+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004950s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005390s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005315s ]
+
+[ 2013-10-20T13:03:18+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001986s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002110s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+
+[ 2013-10-20T13:03:42+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001253s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+
+[ 2013-10-20T13:03:46+08:00 ] 127.0.0.1 /myshop/Product/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001331s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id [ RunTime:0.001636s ]
+
+[ 2013-10-20T13:03:51+08:00 ] 127.0.0.1 /myshop/Catagory/clist/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001224s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id and c.categories_id=2 [ RunTime:0.001176s ]
+
+[ 2013-10-20T13:03:55+08:00 ] 127.0.0.1 /myshop/Product/item/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001684s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: select * from products c, products_to_categories cd,products_description pd where cd.products_id=c.products_id and c.products_id=pd.products_id and c.products_id=1 [ RunTime:0.000522s ]
+
+[ 2013-10-20T13:12:28+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001619s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001717s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000388s ]
+
+[ 2013-10-20T13:12:35+08:00 ] 127.0.0.1 /myshop/Catagory/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001212s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id [ RunTime:0.000734s ]
+
+[ 2013-10-20T13:12:36+08:00 ] 127.0.0.1 /myshop/Catagory/clist/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001575s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001702s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id and c.categories_id=2 [ RunTime:0.000456s ]
+
+[ 2013-10-20T13:12:36+08:00 ] 127.0.0.1 /myshop/Product/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005072s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004793s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id [ RunTime:0.001697s ]
+
+[ 2013-10-20T13:12:37+08:00 ] 127.0.0.1 /myshop/Product/clist/catagoryid/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001737s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001864s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id and cd.categories_id=10 [ RunTime:0.000749s ]
+
+[ 2013-10-20T13:12:38+08:00 ] 127.0.0.1 /myshop/Product/item/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001247s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: select * from products c, products_to_categories cd,products_description pd where cd.products_id=c.products_id and c.products_id=pd.products_id and c.products_id=1 [ RunTime:0.000578s ]
+
+[ 2013-10-20T13:12:38+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001222s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+
+[ 2013-10-20T13:12:39+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001265s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+
+[ 2013-10-20T13:12:41+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004956s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005410s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005269s ]
+
+[ 2013-10-20T13:12:41+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001533s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001657s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+
+[ 2013-10-20T13:12:42+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001226s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001327s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.001118s ]
+
+[ 2013-10-20T13:16:02+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.010801s ]
+INFO: [ route_check ] --END-- [ RunTime:0.011215s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009961s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000500s ]
+
+[ 2013-10-20T13:17:34+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001754s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001856s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000332s ]
+
+[ 2013-10-20T13:18:54+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001577s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001680s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.001274s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 17 行.
+
+[ 2013-10-20T13:19:12+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001538s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001640s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000467s ]
+
+[ 2013-10-20T13:23:32+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001703s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000334s ]
+
+[ 2013-10-20T13:23:48+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001699s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.001205s ]
+
+[ 2013-10-20T13:24:18+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002224s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002376s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002400s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000312s ]
+
+[ 2013-10-20T13:24:33+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006197s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006587s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004926s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000333s ]
+
+[ 2013-10-20T13:24:59+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006850s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005336s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000988s ]
+
+[ 2013-10-20T13:26:25+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001755s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000963s ]
+
+[ 2013-10-20T13:27:15+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006370s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006771s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005977s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000886s ]
+
+[ 2013-10-20T13:27:39+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001680s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001792s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.001121s ]
+
+[ 2013-10-20T13:28:40+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007066s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007487s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004717s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pwd D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 13 行.
+SQL: select * from customers where customers_firstname='' and customers_password='d41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.000723s ]
+
+[ 2013-10-20T13:28:45+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006757s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007094s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006185s ]
+SQL: select * from customers where customers_firstname='qtx' and customers_password='e10adc3949ba59abbe56e057f20f883e' [ RunTime:0.000370s ]
+
+[ 2013-10-20T13:29:06+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001747s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002207s ]
+SQL: select * from customers where customers_firstname='qtx' and customers_password='e10adc3949ba59abbe56e057f20f883e' [ RunTime:0.000681s ]
+
+[ 2013-10-20T13:40:01+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004692s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004893s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006227s ]
+
+[ 2013-10-20T13:49:46+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001646s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001769s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+
+[ 2013-10-20T13:51:42+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002424s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002678s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006438s ]
+
+[ 2013-10-20T13:52:01+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006428s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006707s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006378s ]
+
+[ 2013-10-20T13:52:41+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001550s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+
+[ 2013-10-20T13:53:07+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001704s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+
+[ 2013-10-20T13:53:46+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+
+[ 2013-10-20T13:55:54+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001763s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004424s ]
+
+[ 2013-10-20T13:59:30+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+
+[ 2013-10-20T13:59:40+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006437s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006032s ]
+
+[ 2013-10-20T13:59:45+08:00 ] 127.0.0.1 /myshop/Catagory/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001709s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001785s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id [ RunTime:0.000601s ]
+
+[ 2013-10-20T13:59:46+08:00 ] 127.0.0.1 /myshop/Catagory/clist/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001882s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002015s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002362s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id and c.categories_id=2 [ RunTime:0.000415s ]
+
+[ 2013-10-20T13:59:47+08:00 ] 127.0.0.1 /myshop/Product/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002446s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002582s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id [ RunTime:0.000813s ]
+
+[ 2013-10-20T13:59:47+08:00 ] 127.0.0.1 /myshop/Product/clist/catagoryid/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001893s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002016s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id and cd.categories_id=10 [ RunTime:0.001641s ]
+
+[ 2013-10-20T13:59:48+08:00 ] 127.0.0.1 /myshop/Product/item/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001621s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+SQL: select * from products c, products_to_categories cd,products_description pd where cd.products_id=c.products_id and c.products_id=pd.products_id and c.products_id=1 [ RunTime:0.000789s ]
+
+[ 2013-10-20T13:59:48+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005675s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005794s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005378s ]
+
+[ 2013-10-20T13:59:48+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001576s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+
+[ 2013-10-20T13:59:51+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001677s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003416s ]
+
+[ 2013-10-20T14:01:15+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001784s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+
+[ 2013-10-20T14:05:27+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001866s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001991s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003319s ]
+
+[ 2013-10-20T14:05:45+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001532s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+
+[ 2013-10-20T14:05:49+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001560s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+
+[ 2013-10-20T14:08:26+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001648s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+
+[ 2013-10-20T14:11:21+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006907s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007294s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006120s ]
+
+[ 2013-10-20T14:12:34+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006559s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006948s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007264s ]
+
+[ 2013-10-20T14:12:37+08:00 ] 127.0.0.1 /myshop/Catagory/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001555s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id [ RunTime:0.001129s ]
+
+[ 2013-10-20T14:12:38+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006781s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007243s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005853s ]
+
+[ 2013-10-20T16:51:53+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001691s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+
+[ 2013-10-20T16:52:18+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006051s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006043s ]
+
+[ 2013-10-20T16:53:43+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001637s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+
+[ 2013-10-20T17:03:08+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006911s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007172s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003690s ]
+NOTIC: [2] require(Thinkphp/Extend/Vendor/Encrypt/PasswordHash.php): failed to open stream: No such file or directory D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 9 行.
+
+[ 2013-10-20T17:04:00+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002906s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003098s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+NOTIC: [2] require(Thinkphp\Extend\Vendor\Encrypt\PasswordHash.php): failed to open stream: No such file or directory D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 9 行.
+
+[ 2013-10-20T17:04:36+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006581s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006970s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007144s ]
+NOTIC: [2] require(Encrypt\PasswordHash.php): failed to open stream: No such file or directory D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 9 行.
+
+[ 2013-10-20T17:04:57+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004337s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005575s ]
+NOTIC: [2] require(./Encrypt/PasswordHash.php): failed to open stream: No such file or directory D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 9 行.
+
+[ 2013-10-20T17:12:29+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001662s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+
+[ 2013-10-20T17:13:12+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006029s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006437s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004404s ]
+NOTIC: [2] require(Lib/Encrypt/PasswordHash.class.php): failed to open stream: No such file or directory D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 10 行.
+
+[ 2013-10-20T17:14:19+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001700s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+NOTIC: [2] require(../../Thinkphp/Lib/Encrypt/PasswordHash.class.php): failed to open stream: No such file or directory D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 10 行.
+
+[ 2013-10-20T17:15:34+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007152s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007558s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008050s ]
+NOTIC: [2] require(THINK_PATH/Lib/Encrypt/PasswordHash.class.php): failed to open stream: No such file or directory D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 10 行.
+
+[ 2013-10-20T17:15:46+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001788s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+NOTIC: [8] Undefined variable: THINK_PATH D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 10 行.
+NOTIC: [2] require(/Lib/Encrypt/PasswordHash.class.php): failed to open stream: No such file or directory D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 10 行.
+
+[ 2013-10-20T17:19:10+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006109s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006508s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005856s ]
+
+[ 2013-10-20T17:21:29+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+
+[ 2013-10-20T17:21:48+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001446s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+
+[ 2013-10-20T17:22:46+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000892s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+
+[ 2013-10-20T17:23:02+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001435s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+
+[ 2013-10-20T17:23:27+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003881s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004269s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003407s ]
+SQL: select * from customers where customers_firstname='qtx' and customers_password='$P$DZ0gbjHyes3fSIevDzlMxMpoN6eEwE0' [ RunTime:0.000388s ]
+
+[ 2013-10-20T17:24:46+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000914s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+
+[ 2013-10-20T17:24:52+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001389s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: select * from customers where customers_firstname='qtx' and customers_password='$P$DXQsOCKYVPaBaVPYD0FupNRBskuYD41' [ RunTime:0.000357s ]
+
+[ 2013-10-20T17:37:56+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.000400s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+
+[ 2013-10-20T17:39:38+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000877s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.000549s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+
+[ 2013-10-20T17:39:53+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004649s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.001114s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+
+[ 2013-10-20T17:40:35+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001430s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.000830s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+
+[ 2013-10-20T17:41:38+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000853s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.001198s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+
+[ 2013-10-20T17:41:52+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000889s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.001126s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+
+[ 2013-10-20T17:42:16+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003628s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004057s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.000340s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+
+[ 2013-10-20T17:42:17+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000871s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.001088s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+
+[ 2013-10-20T17:42:20+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003560s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003958s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003393s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.000631s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+
+[ 2013-10-20T17:42:40+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005465s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005665s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.001208s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+
+[ 2013-10-20T17:42:46+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001091s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: select * from customers where customers_firstname='qtx' [ RunTime:0.000926s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 26 行.
+
+[ 2013-10-20T17:44:50+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006354s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006602s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.007177s ]
+SQL: SELECT * FROM `customers` WHERE ( cusomers_firstname=qtx )  [ RunTime:0.000748s ]
+ERR: 1054:Unknown column 'cusomers_firstname' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `customers` WHERE ( cusomers_firstname=qtx ) 
+
+[ 2013-10-20T17:45:14+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002842s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003191s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003593s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002511s ]
+SQL: SELECT * FROM `customers` WHERE ( cusomers_firstname=qtx )  [ RunTime:0.000267s ]
+ERR: 1054:Unknown column 'cusomers_firstname' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `customers` WHERE ( cusomers_firstname=qtx ) 
+
+[ 2013-10-20T17:45:39+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001252s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001411s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.007492s ]
+SQL: SELECT * FROM `customers` WHERE ( cusomers_firstname='qtx' )  [ RunTime:0.000313s ]
+ERR: 1054:Unknown column 'cusomers_firstname' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `customers` WHERE ( cusomers_firstname='qtx' ) 
+
+[ 2013-10-20T17:50:40+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001884s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002009s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.004603s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000886s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:51:16+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000988s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.004972s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: customers_firstname D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:51:45+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000870s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.005992s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000512s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:55:59+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001447s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.008464s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000704s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:56:36+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003276s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003587s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003803s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002509s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000853s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:57:02+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003658s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003921s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003486s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002584s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000375s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:57:15+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000882s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.003635s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.001157s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:57:24+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000864s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.008085s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000774s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 22 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:57:42+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001101s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002841s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000797s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:58:00+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002698s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000502s ]
+NOTIC: [8] Use of undefined constant customers_password - assumed 'customers_password' D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\myshop\Lib\Action\UserAction.class.php 第 27 行.
+
+[ 2013-10-20T17:58:43+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000865s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002854s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.001213s ]
+
+[ 2013-10-20T17:58:57+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004004s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004466s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003306s ]
+SQL: select * from customers_basket c, products p, products_description pd where c.products_id=p.products_id and p.products_id=pd.products_id and c.customers_id=1 [ RunTime:0.001462s ]
+
+[ 2013-10-20T17:58:59+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000927s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: select * from orders c, orders_products op, products_description pd where c.orders_id=op.orders_id and op.products_id=pd.products_id and c.customers_id=1 [ RunTime:0.001246s ]
+
+[ 2013-10-20T17:59:01+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000918s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002807s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.001095s ]
+
+[ 2013-10-20T18:00:08+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001929s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002064s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.003498s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000390s ]
+
+[ 2013-10-20T18:00:10+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003488s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003889s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003305s ]
+SQL: select * from customers_basket c, products p, products_description pd where c.products_id=p.products_id and p.products_id=pd.products_id and c.customers_id=1 [ RunTime:0.001026s ]
+
+[ 2013-10-20T18:00:12+08:00 ] 127.0.0.1 /myshop/User/logoff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003543s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003934s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003202s ]
+
+[ 2013-10-20T18:00:14+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000900s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+
+[ 2013-10-20T18:00:19+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003415s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003693s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.003391s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000499s ]
+
+[ 2013-10-20T18:00:20+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000881s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: select * from orders c, orders_products op, products_description pd where c.orders_id=op.orders_id and op.products_id=pd.products_id and c.customers_id=1 [ RunTime:0.001150s ]
+
+[ 2013-10-20T18:00:23+08:00 ] 127.0.0.1 /myshop/User/logoff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004878s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006315s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003366s ]
+
+[ 2013-10-20T18:00:25+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000886s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+
+[ 2013-10-20T18:00:26+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004223s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004604s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003467s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002848s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.001087s ]
+
+[ 2013-10-20T18:00:27+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000838s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: select * from customers_basket c, products p, products_description pd where c.products_id=p.products_id and p.products_id=pd.products_id and c.customers_id=1 [ RunTime:0.000395s ]
+
+[ 2013-10-20T18:00:28+08:00 ] 127.0.0.1 /myshop/User/logoff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000978s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+
+[ 2013-10-20T18:00:29+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000924s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002418s ]
+
+[ 2013-10-20T18:00:30+08:00 ] 127.0.0.1 /myshop/Catagory/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000879s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id [ RunTime:0.001121s ]
+
+[ 2013-10-20T18:00:31+08:00 ] 127.0.0.1 /myshop/Catagory/clist/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000876s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id and c.categories_id=2 [ RunTime:0.000436s ]
+
+[ 2013-10-20T18:00:31+08:00 ] 127.0.0.1 /myshop/Product/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000952s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id [ RunTime:0.001031s ]
+
+[ 2013-10-20T18:00:32+08:00 ] 127.0.0.1 /myshop/Product/clist/catagoryid/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004364s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004893s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003521s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id and cd.categories_id=10 [ RunTime:0.001308s ]
+
+[ 2013-10-20T18:00:32+08:00 ] 127.0.0.1 /myshop/Product/item/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003737s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004114s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002638s ]
+SQL: select * from products c, products_to_categories cd,products_description pd where cd.products_id=c.products_id and c.products_id=pd.products_id and c.products_id=1 [ RunTime:0.000995s ]
+
+[ 2013-10-20T18:01:00+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003480s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003935s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006421s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002579s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.001007s ]
+
+[ 2013-10-20T18:01:18+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003729s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004220s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003285s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.007271s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000482s ]
+
+[ 2013-10-20T18:01:34+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000891s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.006778s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000558s ]
+
+[ 2013-10-20T18:01:38+08:00 ] 127.0.0.1 /myshop/User/logoff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000859s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+
+[ 2013-10-20T18:02:03+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001203s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.006808s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000370s ]
+
+[ 2013-10-20T18:02:20+08:00 ] 127.0.0.1 /myshop/User/logoff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001442s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+
+[ 2013-10-20T18:02:21+08:00 ] 127.0.0.1 /myshop/Catagory/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002160s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002450s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003797s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id [ RunTime:0.000686s ]
+
+[ 2013-10-20T18:02:22+08:00 ] 127.0.0.1 /myshop/Catagory/clist/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002576s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002840s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002795s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id and c.categories_id=2 [ RunTime:0.000365s ]
+
+[ 2013-10-20T18:02:22+08:00 ] 127.0.0.1 /myshop/Product/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001046s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id [ RunTime:0.000987s ]
+
+[ 2013-10-20T18:02:23+08:00 ] 127.0.0.1 /myshop/Product/clist/catagoryid/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003451s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003597s ]
+SQL: select * from products c, products_to_categories cd where cd.products_id=c.products_id and cd.categories_id=10 [ RunTime:0.000605s ]
+
+[ 2013-10-20T18:02:23+08:00 ] 127.0.0.1 /myshop/Product/item/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000869s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: select * from products c, products_to_categories cd,products_description pd where cd.products_id=c.products_id and c.products_id=pd.products_id and c.products_id=1 [ RunTime:0.001964s ]
+
+[ 2013-10-20T18:02:24+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003692s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004067s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+
+[ 2013-10-20T18:02:24+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003768s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003940s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004030s ]
+
+[ 2013-10-20T18:02:35+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000938s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002269s ]
+
+[ 2013-10-20T18:02:39+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003785s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004159s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003268s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.005814s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.001076s ]
+
+[ 2013-10-20T18:02:42+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003514s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003254s ]
+SQL: select * from customers_basket c, products p, products_description pd where c.products_id=p.products_id and p.products_id=pd.products_id and c.customers_id=1 [ RunTime:0.000948s ]
+
+[ 2013-10-20T18:05:51+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001850s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001986s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.002958s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.001166s ]
+
+[ 2013-10-20T18:05:53+08:00 ] 127.0.0.1 /myshop/Basket/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003502s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004045s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003246s ]
+SQL: select * from customers_basket c, products p, products_description pd where c.products_id=p.products_id and p.products_id=pd.products_id and c.customers_id=1 [ RunTime:0.001405s ]
+
+[ 2013-10-20T18:05:54+08:00 ] 127.0.0.1 /myshop/User/logoff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001008s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+
+[ 2013-10-20T18:05:55+08:00 ] 127.0.0.1 /myshop/Order/clist/customid/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003495s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003870s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003697s ]
+
+[ 2013-10-20T18:05:56+08:00 ] 127.0.0.1 /myshop/Catagory/clist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002810s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003297s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003303s ]
+SQL: select * from categories c, categories_description cd where cd.categories_id=c.categories_id [ RunTime:0.002053s ]
+
+[ 2013-10-20T19:15:12+08:00 ] 127.0.0.1 /myshop/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001779s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `customers` [ RunTime:0.007273s ]
+SQL: SELECT * FROM `customers` WHERE ( customers_firstname='qtx' )  [ RunTime:0.000607s ]
+

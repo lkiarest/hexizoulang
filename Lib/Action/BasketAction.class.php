@@ -7,10 +7,19 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class BasketAction extends Action {
+class BasketAction extends UtilAction {
     public function clist($customid = -1) {
-        $result = M()->query("select * from customers_basket c, products p, products_description pd where c.products_id=p.products_id and p.products_id=pd.products_id and c.customers_id=$customid");
-        $this->ajaxReturn($result, 'JSON');
+        $ret = array("success"=>false, "result"=>null);
+        if ($this->isLogin()) {
+            $result = M()->query("select * from customers_basket c, products p, products_description pd where c.products_id=p.products_id and p.products_id=pd.products_id and c.customers_id=$customid");
+            $ret["success"] = true;
+            $ret["result"] = $result;
+        } else {
+            $ret["success"] = false;
+            $ret["errorText"] = "user not login";
+        }
+
+        $this->ajaxReturn($ret, 'JSON');
     }
 }
 
